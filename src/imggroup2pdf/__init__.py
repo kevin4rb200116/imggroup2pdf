@@ -14,5 +14,6 @@ def main() -> int:
     """Entry point for the application script"""
 
     images: list[str] = list(filter(hasSuffix, sys.argv))
+    images.sort()
 
     return getPDF(images)
